@@ -1,0 +1,86 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+    
+}
+
+.title {
+    font-size: 70px;    
+    animation: flow 4s ease-in-out infinite;
+    background: linear-gradient(60deg, #FF6954, #ba64f0);    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.containerInput {
+    padding: 15px;
+    margin: 34px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);    
+    
+}
+
+.containerInput input {
+    outline: none;
+    margin-right: 8px;    
+}
+
+.buttonSearch {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border: 0;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 28px;    
+}
+
+.main span {
+    margin-bottom: 10px;
+}
+
+@keyframes flow {
+    from {
+        transform: rotatex(90deg);
+    }
+    to {
+        transform: rotatex(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .main h2 {
+        font-size: 20px;
+    }
+
+    .main {
+        width: 80%;
+    }
+}
